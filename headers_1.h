@@ -1,9 +1,11 @@
 #ifndef HEADERS_1_H_INCLUDED
 #define HEADERS_1_H_INCLUDED
+
+const int MAX=50;
 namespace Lab1{
     struct Line{
         int n;
-        int *mas;
+        int *mas[MAX];
     };
     template <class T>
     int getNum(T &a){
@@ -13,7 +15,7 @@ namespace Lab1{
     return 1;
     }
     int is_even(int );
-    Line* process(int i, Line *&lines);
+    Line* process(int i, Line *&lines, int(*f)(int ));
     Line* sort(Line *&lines, int m);
     int count_real(Line *&mas);
     Line* input(int &);
@@ -22,6 +24,3 @@ namespace Lab1{
 
 
 }
-
-
-#endif // HEADERS_1_H_INCLUDED
