@@ -19,7 +19,7 @@ int main()
 
     output("Sourced matrix", arr, m);
 
-    process((index-1), arr);
+    process((index-1), arr, is_even);
     arr=sort(arr, m);
 
     output("Final matrix", arr, m);
